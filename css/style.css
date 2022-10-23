@@ -1,9 +1,9 @@
 /* General styles */
 
 :root {
-    --main-color: #303030;
-    --second-color: #555555;
-    --pre-title-case: uppercase;
+  --main-color: #303030;
+  --second-color: #555555;
+  --pre-title-case: uppercase;
 }
 
 .body {
@@ -16,6 +16,21 @@
 
 .list {
   list-style: none;
+}
+
+.button {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  font-family: inherit;
+}
+
+.second-title {
+  font-size: 42px;
+  line-height: calc(49 / 42);
+  letter-spacing: 0.05em;
 }
 
 /* Header styles */
@@ -47,13 +62,7 @@
 }
 
 .header-button {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: #ffffff;
-  font-family: inherit;
 }
 /* Hero styles */
 .hero-list-link {
@@ -103,10 +112,8 @@
 }
 
 .about-title {
-  font-size: 42px;
-  line-height: calc(49 / 42);
-  letter-spacing: 0.05em;
   color: var(--main-color);
+}
 
 .about-after-text {
   font-weight: 400;
@@ -115,7 +122,6 @@
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
-
 .about-text {
   font-weight: 400;
   font-size: 14px;
@@ -125,35 +131,42 @@
 }
 
 .about-button {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: calc(16 / 12);
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
   color: var(--main-color);
 }
 
 /* Services styles */
 .services-pre-title {
-font-weight: 600;
-    font-size: 11px;
-    line-height: calc(15 / 11);
-    text-transform: var(--pre-title-case);
-    color: rgba(157, 164, 189, 0.6);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  text-transform: var(--pre-title-case);
+  color: rgba(157, 164, 189, 0.6);
 }
 
 .services-title {
-        font-size: 42px;
-        line-height: calc(49 / 42);
-        letter-spacing: 0.05em;
-        color: #FFFFFF;
+  color: #ffffff;
 }
 
 .services-text {
-        font-size: 18px;
-        line-height: calc(30 / 18);
-        letter-spacing: 0.02em;
-        color: #9DA4BD;
-
+  font-size: 18px;
+  line-height: calc(30 / 18);
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 
+.services-button {
+  color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
